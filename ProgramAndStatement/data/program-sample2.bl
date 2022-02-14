@@ -1,0 +1,79 @@
+PROGRAM doingSomething IS
+
+  
+
+	INSTRUCTION one IS
+    
+		move
+
+		turnleft
+	END one
+  
+  
+
+	INSTRUCTION two IS
+    
+		turnleft
+    
+		turnleft
+  
+		WHILE next-is-empty DO
+			move
+		END WHILE
+	END two
+
+
+
+	INSTRUCTION three IS
+    
+		move
+		move
+		IF next-is-enemy THEN
+			infect
+		ELSE
+			IF next-is-wall THEN
+				turnleft
+				move
+			END IF
+		END IF
+	END three
+
+	INSTRUCTION four IS
+    
+		move
+		move
+		turnright
+		IF next-is-wall THEN
+			move
+			move
+			turnright
+		END IF
+	END four
+
+BEGIN
+  
+	WHILE true DO
+    
+		two
+    
+		one
+  
+		four
+		four
+		three
+		IF next-is-wall THEN
+			move
+			move
+			turnright
+		END IF
+		IF next-is-enemy THEN
+			infect
+		ELSE
+			IF next-is-wall THEN
+				turnleft
+				move
+			END IF
+		END IF
+	END WHILE
+
+END doingSomething

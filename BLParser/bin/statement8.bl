@@ -1,0 +1,4 @@
+WHILE this-is-wrong DO
+  move
+  skip
+END WHILE

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.10" sequence="74" timestamp="1555523718970" analysisTimestamp="1555523582848" release="">
+  <Project projectName="JavaIOExplorations">
+    <Jar>D:\workspace\JavaIOExplorations\bin\CopyFileStdJava.class</Jar>
+    <Jar>D:\workspace\JavaIOExplorations\bin\FilterFileStdJava.class</Jar>
+    <AuxClasspathEntry>D:\workspace\JavaIOExplorations\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\jhkwa\OneDrive\SP19\CSE2231\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_181\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_181\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>D:\workspace\JavaIOExplorations\test</SrcDir>
+    <SrcDir>D:\workspace\JavaIOExplorations\src</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="4" last="14" removedByChange="true">
+    <Class classname="CopyFileStdJava">
+      <SourceLine classname="CopyFileStdJava" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Class>
+    <Method classname="CopyFileStdJava" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CopyFileStdJava" start="41" end="45" startBytecode="0" endBytecode="23" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Method>
+    <LocalVariable name="in" register="1" pc="18" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="CopyFileStdJava" start="41" end="41" startBytecode="17" endBytecode="17" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    <SourceLine classname="CopyFileStdJava" start="41" end="41" startBytecode="17" endBytecode="17" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="in"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="14" last="14" removedByChange="true">
+    <Class classname="CopyFileStdJava">
+      <SourceLine classname="CopyFileStdJava" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Class>
+    <Method classname="CopyFileStdJava" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CopyFileStdJava" start="41" end="45" startBytecode="0" endBytecode="23" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Method>
+    <LocalVariable name="out" register="2" pc="43" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="CopyFileStdJava" start="42" end="42" startBytecode="42" endBytecode="42" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    <SourceLine classname="CopyFileStdJava" start="42" end="42" startBytecode="42" endBytecode="42" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="out"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="14">
+    <Class classname="CopyFileStdJava">
+      <SourceLine classname="CopyFileStdJava" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Class>
+    <Method classname="CopyFileStdJava" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CopyFileStdJava" start="34" end="59" startBytecode="0" endBytecode="378" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader"/>
+    </Method>
+    <SourceLine classname="CopyFileStdJava" start="34" end="34" startBytecode="11" endBytecode="11" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    <SourceLine classname="CopyFileStdJava" start="34" end="34" startBytecode="11" endBytecode="11" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="14">
+    <Class classname="CopyFileStdJava">
+      <SourceLine classname="CopyFileStdJava" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Class>
+    <Method classname="CopyFileStdJava" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CopyFileStdJava" start="34" end="59" startBytecode="0" endBytecode="378" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter"/>
+    </Method>
+    <SourceLine classname="CopyFileStdJava" start="35" end="35" startBytecode="33" endBytecode="33" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    <SourceLine classname="CopyFileStdJava" start="35" end="35" startBytecode="33" endBytecode="33" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="4" last="4" removedByChange="true">
+    <Class classname="CopyFileStdJava">
+      <SourceLine classname="CopyFileStdJava" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Class>
+    <Method classname="CopyFileStdJava" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CopyFileStdJava" start="38" end="40" startBytecode="0" endBytecode="82" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader"/>
+    </Method>
+    <SourceLine classname="CopyFileStdJava" start="39" end="39" startBytecode="11" endBytecode="11" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    <SourceLine classname="CopyFileStdJava" start="39" end="39" startBytecode="11" endBytecode="11" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE" first="32" last="34" removedByChange="true">
+    <Class classname="CopyFileStdJava">
+      <SourceLine classname="CopyFileStdJava" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Class>
+    <Method classname="CopyFileStdJava" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CopyFileStdJava" start="31" end="77" startBytecode="0" endBytecode="47" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Writer;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Writer"/>
+    </Type>
+    <SourceLine classname="CopyFileStdJava" start="31" end="31" startBytecode="0" endBytecode="0" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    <SourceLine classname="CopyFileStdJava" start="31" end="31" startBytecode="0" endBytecode="0" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="40" last="43" removedByChange="true">
+    <Class classname="FilterFileStdJava">
+      <SourceLine classname="FilterFileStdJava" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+    </Class>
+    <Method classname="FilterFileStdJava" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="FilterFileStdJava" start="35" end="61" startBytecode="0" endBytecode="66" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+    </Method>
+    <LocalVariable name="filter" register="2" pc="36" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="FilterFileStdJava" start="36" end="36" startBytecode="35" endBytecode="35" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+    <SourceLine classname="FilterFileStdJava" start="36" end="36" startBytecode="35" endBytecode="35" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="filter"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="44" last="44" removedByChange="true">
+    <Class classname="FilterFileStdJava">
+      <SourceLine classname="FilterFileStdJava" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+    </Class>
+    <Method classname="FilterFileStdJava" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="FilterFileStdJava" start="35" end="62" startBytecode="0" endBytecode="69" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+    </Method>
+    <LocalVariable name="filterString" register="5" pc="87" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="FilterFileStdJava" start="45" end="45" startBytecode="85" endBytecode="85" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+    <SourceLine classname="FilterFileStdJava" start="45" end="45" startBytecode="85" endBytecode="85" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="filterString"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="39">
+    <Class classname="FilterFileStdJava">
+      <SourceLine classname="FilterFileStdJava" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+    </Class>
+    <Method classname="FilterFileStdJava" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="FilterFileStdJava" start="37" end="86" startBytecode="0" endBytecode="820" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader"/>
+    </Method>
+    <SourceLine classname="FilterFileStdJava" start="37" end="37" startBytecode="11" endBytecode="11" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+    <SourceLine classname="FilterFileStdJava" start="37" end="37" startBytecode="11" endBytecode="11" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="39">
+    <Class classname="FilterFileStdJava">
+      <SourceLine classname="FilterFileStdJava" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+    </Class>
+    <Method classname="FilterFileStdJava" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="FilterFileStdJava" start="37" end="86" startBytecode="0" endBytecode="820" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter"/>
+    </Method>
+    <SourceLine classname="FilterFileStdJava" start="58" end="58" startBytecode="122" endBytecode="122" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+    <SourceLine classname="FilterFileStdJava" start="58" end="58" startBytecode="122" endBytecode="122" sourcefile="FilterFileStdJava.java" sourcepath="FilterFileStdJava.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 17 Apr 2019 13:53:00 -0400" total_classes="2" referenced_classes="25" total_bugs="4" total_size="58" num_packages="1" java_version="1.8.0_181" vm_version="25.181-b13" cpu_seconds="76.50" clock_seconds="136.21" peak_mbytes="595.78" alloc_mbytes="1024.00" gc_seconds="1.21" priority_1="4">
+    <PackageStats package="" total_bugs="4" total_types="2" total_size="58" priority_1="4">
+      <ClassStats class="CopyFileStdJava" sourceFile="CopyFileStdJava.java" interface="false" size="22" bugs="2" priority_1="2"/>
+      <ClassStats class="FilterFileStdJava" sourceFile="FilterFileStdJava.java" interface="false" size="36" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="775" invocations="2" avgMicrosecondsPerInvocation="387762" maxMicrosecondsPerInvocation="495018" standardDeviationMicrosecondsPerInvocation="107256"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="347" invocations="357" avgMicrosecondsPerInvocation="974" maxMicrosecondsPerInvocation="33067" standardDeviationMicrosecondsPerInvocation="2372"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="201" invocations="25" avgMicrosecondsPerInvocation="8069" maxMicrosecondsPerInvocation="87931" standardDeviationMicrosecondsPerInvocation="17856"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="121" invocations="75" avgMicrosecondsPerInvocation="1618" maxMicrosecondsPerInvocation="14366" standardDeviationMicrosecondsPerInvocation="2542"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="97" invocations="4" avgMicrosecondsPerInvocation="24391" maxMicrosecondsPerInvocation="83365" standardDeviationMicrosecondsPerInvocation="34267"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="87" invocations="6" avgMicrosecondsPerInvocation="14533" maxMicrosecondsPerInvocation="37497" standardDeviationMicrosecondsPerInvocation="14014"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="80" invocations="6" avgMicrosecondsPerInvocation="13410" maxMicrosecondsPerInvocation="30298" standardDeviationMicrosecondsPerInvocation="12247"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="77" invocations="357" avgMicrosecondsPerInvocation="218" maxMicrosecondsPerInvocation="1549" standardDeviationMicrosecondsPerInvocation="137"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="74" invocations="25" avgMicrosecondsPerInvocation="2993" maxMicrosecondsPerInvocation="40902" standardDeviationMicrosecondsPerInvocation="8536"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="74" invocations="25" avgMicrosecondsPerInvocation="2991" maxMicrosecondsPerInvocation="14695" standardDeviationMicrosecondsPerInvocation="3786"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="57" invocations="42" avgMicrosecondsPerInvocation="1379" maxMicrosecondsPerInvocation="30173" standardDeviationMicrosecondsPerInvocation="4683"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="57" invocations="25" avgMicrosecondsPerInvocation="2298" maxMicrosecondsPerInvocation="18376" standardDeviationMicrosecondsPerInvocation="3877"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="54" invocations="4" avgMicrosecondsPerInvocation="13599" maxMicrosecondsPerInvocation="48479" standardDeviationMicrosecondsPerInvocation="20229"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1555205938216" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1555205938216" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1555206005875" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1555206017580" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1555206057438" release="" codeSize="8" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1555206136993" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1555206139531" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1555206143757" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1555206151665" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1555206235271" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1555206246296" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1555206283010" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1555206299746" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1555206305244" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1555206355953" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1555206421961" release="" codeSize="15" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1555206428352" release="" codeSize="15" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1555206445676" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1555206730923" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1555206763272" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1555206767722" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1555206785054" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1555206787153" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1555206794053" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1555206813102" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1555206815129" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1555206833391" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1555206852017" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1555206861466" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1555206867238" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1555206869209" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1555206879733" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1555206891312" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1555206909752" release="" codeSize="18" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1555206913540" release="" codeSize="19" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1555206953764" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1555206961190" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="37" timestamp="1555437698210" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="38" timestamp="1555437798132" release="" codeSize="22" numClasses="1"/>
+    <AppVersion sequence="39" timestamp="1555438157430" release="" codeSize="22" numClasses="1"/>
+    <AppVersion sequence="40" timestamp="1555438192706" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="41" timestamp="1555438201262" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="42" timestamp="1555438204029" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="43" timestamp="1555438221054" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="44" timestamp="1555438274357" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="45" timestamp="1555438317622" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="46" timestamp="1555438333098" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="47" timestamp="1555438352897" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="48" timestamp="1555438384786" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="49" timestamp="1555438412338" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="50" timestamp="1555438435276" release="" codeSize="31" numClasses="1"/>
+    <AppVersion sequence="51" timestamp="1555438544369" release="" codeSize="31" numClasses="1"/>
+    <AppVersion sequence="52" timestamp="1555438846414" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="53" timestamp="1555439039454" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="54" timestamp="1555439066079" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="55" timestamp="1555439084949" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="56" timestamp="1555439344802" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="57" timestamp="1555439353789" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="58" timestamp="1555439359050" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="59" timestamp="1555439501976" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="60" timestamp="1555439517813" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="61" timestamp="1555439545800" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="62" timestamp="1555439566621" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="63" timestamp="1555439572426" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="64" timestamp="1555439582444" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="65" timestamp="1555439635661" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="66" timestamp="1555439855534" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="67" timestamp="1555439904608" release="" codeSize="38" numClasses="1"/>
+    <AppVersion sequence="68" timestamp="1555439926136" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="69" timestamp="1555439937503" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="70" timestamp="1555439954366" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="71" timestamp="1555439987986" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="72" timestamp="1555452710645" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="73" timestamp="1555460042419" release="" codeSize="22" numClasses="1"/>
+  </History>
+</BugCollection>

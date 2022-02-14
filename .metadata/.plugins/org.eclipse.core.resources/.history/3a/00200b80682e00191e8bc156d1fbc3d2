@@ -1,0 +1,13 @@
+
+public class example {
+
+    int cnt;
+
+    public example() {
+
+    }
+
+    public static int increase() {
+        return this.cnt++;
+    }
+}

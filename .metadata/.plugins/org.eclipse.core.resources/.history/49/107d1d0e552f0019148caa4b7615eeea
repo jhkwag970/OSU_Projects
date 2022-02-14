@@ -1,0 +1,80 @@
+import java.util.Iterator;
+
+import components.naturalnumber.NaturalNumber;
+import components.naturalnumber.NaturalNumber2;
+import components.sequence.Sequence;
+import components.sequence.Sequence1L;
+
+public class exampleMain {
+
+    public static NaturalNumber max(Sequence<NaturalNumber> s) {
+        NaturalNumber max = s.remove(0);
+        s.add(0, max);
+        int length = s.length();
+        for (int i = 0; i < length; i++) {
+            NaturalNumber tmp = s.remove(i);
+            if (max.compareTo(tmp) < 0) {
+                max = tmp;
+            }
+            s.add(i, tmp);
+        }
+
+        return max;
+    }
+
+    public static NaturalNumber min(Sequence<NaturalNumber> s) {
+        NaturalNumber max = s.remove(0);
+        s.add(0, max);
+        int length = s.length();
+        for (int i = 0; i < length; i++) {
+            NaturalNumber tmp = s.remove(i);
+            if (max.compareTo(tmp) > 0) {
+                max.copyFrom(tmp);
+            }
+            s.add(i, tmp);
+        }
+
+        return max;
+    }
+
+    public static NaturalNumber min2(Sequence<NaturalNumber> s) {
+        Iterator<NaturalNumber> t = s.iterator();
+        NaturalNumber min = s.remove(0);
+        s.add(0, min);
+
+        while (t.hasNext()) {
+            NaturalNumber tmp = t.next();
+            System.out.println(tmp);
+            if (min.compareTo(tmp) > 0) {
+                min = tmp;
+            }
+        }
+        return min;
+
+    }
+
+    public static void main(String[] args) {
+
+        Sequence<NaturalNumber> s = new Sequence1L<NaturalNumber>();
+
+        s.add(0, new NaturalNumber2(1));
+        s.add(0, new NaturalNumber2(6));
+        s.add(0, new NaturalNumber2(2));
+        s.add(0, new NaturalNumber2(3));
+
+        System.out.println(s);
+
+        Iterator<NaturalNumber> tmp = s.iterator();
+
+        while (tmp.hasNext()) {
+            System.out.println(tmp.next());
+        }
+//
+//        NaturalNumber big = min2(s);
+//
+//        System.out.println(big);
+//        System.out.println(s);
+
+    }
+
+}

@@ -1,0 +1,93 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class tagCloud_standardJava {
+
+    public static void main(String[] args) {
+
+        String input = "", output = "";
+        Set<String> wordList = new HashSet<String>();
+        Map<String, Integer> wordCount = new HashMap<String, Integer>();
+        BufferedReader in = new BufferedReader(
+                new InputStreamReader(System.in));
+
+        try {
+            System.out.println("Enter the value: ");
+            input = in.readLine();
+
+            System.out.println("Enter the value: ");
+            output = in.readLine();
+        } catch (IOException e) {
+            System.err.println("Error reading the file");
+            return;
+        }
+
+        BufferedReader inFile;
+        PrintWriter out;
+        try {
+            inFile = new BufferedReader(new FileReader(input));
+            out = new PrintWriter(new BufferedWriter(new FileWriter(output)));
+        } catch (IOException e) {
+            System.err.println("Error opening the file");
+            return;
+        }
+
+        countingWords(inFile, wordList, wordCount);
+
+        try {
+            inFile.close();
+            in.close();
+            out.close();
+        } catch (IOException e) {
+            System.err.println("Error closing the file");
+        }
+
+    }
+
+    public static void countingWords(BufferedReader fileIn,
+            Set<String> wordIndex, Map<String, Integer> word) {
+
+        Set<Character> separatorSet = new HashSet<Character>();
+        String separator = "\\ \t\n\r,-.!?[]';:/()@&~`\"";
+
+        for (int i = 0; i < separator.length(); i++) {
+            separatorSet.add(separator.charAt(i));
+        }
+
+        try {
+            String line = fileIn.readLine();
+            while (line != null) {
+                int pos = 0;
+                while (pos < line.length()) {
+                    String token = nextWordOrSeparator(line, pos, separatorSet);
+                    if (!separatorSet.contains(token.charAt(0))) {
+                        if (word.containsKey(token)) {
+                            int num = word.get(token);
+                            num++;
+                            word.put(token, num);
+                        }
+                    }
+                }
+            }
+        } catch (IOException e) {
+            System.err.println("Error reading file");
+            return;
+        }
+
+    }
+
+    private static String nextWordOrSeparator(String text, int pos,
+            Set<Character> separators) {
+        return "";
+    }
+
+}

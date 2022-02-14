@@ -1,0 +1,7 @@
+WHILE true DO
+  move
+  skip
+  skip
+  skip
+  skip
+END WHILE

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.10" sequence="10" timestamp="1551813137819" analysisTimestamp="1551813137163" release="">
+  <Project projectName="StatementCountPrimitiveCalls">
+    <Jar>D:\workspace\StatementCountPrimitiveCalls\bin\CountPrimitiveCallsTest.class</Jar>
+    <AuxClasspathEntry>D:\workspace\StatementCountPrimitiveCalls\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\jhkwa\OneDrive\SP19\CSE2231\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_181\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_181\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>D:\workspace\StatementCountPrimitiveCalls\src</SrcDir>
+    <SrcDir>D:\workspace\StatementCountPrimitiveCalls\test</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1" last="1" removedByChange="true">
+    <Class classname="CountPrimitiveCalls">
+      <SourceLine classname="CountPrimitiveCalls" sourcefile="CountPrimitiveCalls.java" sourcepath="CountPrimitiveCalls.java"/>
+    </Class>
+    <Method classname="CountPrimitiveCalls" name="countOfPrimitiveCalls" signature="(Lcomponents/statement/Statement;)I" isStatic="true">
+      <SourceLine classname="CountPrimitiveCalls" start="35" end="132" startBytecode="0" endBytecode="125" sourcefile="CountPrimitiveCalls.java" sourcepath="CountPrimitiveCalls.java"/>
+    </Method>
+    <LocalVariable name="sIfTmp" register="4" pc="161" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="CountPrimitiveCalls" start="75" end="75" startBytecode="159" endBytecode="159" sourcefile="CountPrimitiveCalls.java" sourcepath="CountPrimitiveCalls.java"/>
+    <SourceLine classname="CountPrimitiveCalls" start="75" end="75" startBytecode="159" endBytecode="159" sourcefile="CountPrimitiveCalls.java" sourcepath="CountPrimitiveCalls.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="sIfTmp"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 5 Mar 2019 14:12:17 -0500" total_classes="1" referenced_classes="19" total_bugs="0" total_size="55" num_packages="1" java_version="1.8.0_181" vm_version="25.181-b13" cpu_seconds="2.09" clock_seconds="0.66" peak_mbytes="850.09" alloc_mbytes="1024.00" gc_seconds="0.04">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="55">
+      <ClassStats class="CountPrimitiveCallsTest" sourceFile="CountPrimitiveCallsTest.java" interface="false" size="55" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="190" invocations="349" avgMicrosecondsPerInvocation="545" maxMicrosecondsPerInvocation="44009" standardDeviationMicrosecondsPerInvocation="2503"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="150" invocations="2" avgMicrosecondsPerInvocation="75322" maxMicrosecondsPerInvocation="137029" standardDeviationMicrosecondsPerInvocation="61707"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="56" invocations="350" avgMicrosecondsPerInvocation="162" maxMicrosecondsPerInvocation="1380" standardDeviationMicrosecondsPerInvocation="93"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="41" invocations="19" avgMicrosecondsPerInvocation="2198" maxMicrosecondsPerInvocation="14059" standardDeviationMicrosecondsPerInvocation="3465"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="27" invocations="68" avgMicrosecondsPerInvocation="401" maxMicrosecondsPerInvocation="1762" standardDeviationMicrosecondsPerInvocation="370"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="20" invocations="19" avgMicrosecondsPerInvocation="1099" maxMicrosecondsPerInvocation="7553" standardDeviationMicrosecondsPerInvocation="1721"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1551811540435" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1551811540438" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1551811597990" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1551811611982" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1551811624010" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1551811633470" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1551811652446" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1551811664545" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1551812896212" release="" codeSize="55" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1551812914257" release="" codeSize="55" numClasses="1"/>
+  </History>
+</BugCollection>

@@ -1,0 +1,18 @@
+PROGRAM doingSomething IS
+
+  INSTRUCTION two IS
+    IF next-is-not-empty THEN
+      turnleft
+    END IF
+  END two
+
+BEGIN
+  infect
+  WHILE true DO
+    two
+    IF next-is-empty THEN
+      move
+    END IF
+    two
+  END WHILE
+END doingSomething

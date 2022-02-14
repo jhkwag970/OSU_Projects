@@ -1,0 +1,6 @@
+WHILE next-is-enemy DO
+    infect
+    TurnAround
+    move
+    turnright
+END WHILE

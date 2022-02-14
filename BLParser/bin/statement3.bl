@@ -1,0 +1,14 @@
+IF random THEN
+  turnleft
+  infect
+ELSE
+  turnright
+  IF next-is-empty THEN
+    infect
+  ELSE
+    WHILE random DO
+    END WHILE
+    infect
+  END IF
+END IF
+

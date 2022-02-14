@@ -1,0 +1,52 @@
+import java.util.Iterator;
+
+import components.naturalnumber.NaturalNumber;
+import components.naturalnumber.NaturalNumber1L;
+import components.sequence.Sequence;
+
+public class exampleMain {
+
+    public static NaturalNumber max(Sequence<NaturalNumber> s) {
+        NaturalNumber max = s.remove(0);
+        s.add(0, max);
+        int length = s.length();
+        for (int i = 0; i < length; i++) {
+            NaturalNumber tmp = s.remove(i);
+            if (max.compareTo(tmp) < 0) {
+                max = tmp;
+            }
+            s.add(i, tmp);
+        }
+
+        return max;
+    }
+
+    public static NaturalNumber min(Sequence<NaturalNumber> s) {
+        NaturalNumber max = s.remove(0);
+        s.add(0, max);
+        int length = s.length();
+        for (int i = 0; i < length; i++) {
+            NaturalNumber tmp = s.remove(i);
+            if (max.compareTo(tmp) > 0) {
+                max.copyFrom(tmp);
+            }
+            s.add(i, tmp);
+        }
+
+        return max;
+    }
+    
+    public static NaturalNumber min2(Sequence<NaturalNumber> s) {
+        Iterator<NaturalNumber> t = new Iterator<NaturalNumber>();
+        
+    }
+
+    public static void main(String[] args) {
+
+        NaturalNumber num = new NaturalNumber1L(0);
+
+        System.out.println(num);
+
+    }
+
+}

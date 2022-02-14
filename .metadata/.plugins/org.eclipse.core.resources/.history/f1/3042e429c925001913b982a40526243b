@@ -1,0 +1,10 @@
+
+public class HW11 {
+
+    public static void main(String[] args) {
+        int a = Character.digit('1', 36);
+
+        System.out.println(a);
+    }
+
+}

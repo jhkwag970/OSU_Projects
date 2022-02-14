@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.10" sequence="29" timestamp="1547595416207" analysisTimestamp="1547595410988" release="">
+  <Project projectName="JUnitTestingRevisited">
+    <Jar>D:\workspace\JUnitTestingRevisited\bin\Stack2Test.class</Jar>
+    <Jar>D:\workspace\JUnitTestingRevisited\bin\StackTest.class</Jar>
+    <AuxClasspathEntry>D:\workspace\JUnitTestingRevisited\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\jhkwa\OneDrive\SP19\CSE2231\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_181\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_181\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>D:\workspace\JUnitTestingRevisited\test</SrcDir>
+    <SrcDir>D:\workspace\JUnitTestingRevisited\src</SrcDir>
+  </Project>
+  <BugInstance type="IL_INFINITE_RECURSIVE_LOOP" priority="1" rank="9" abbrev="IL" category="CORRECTNESS" first="11" last="11" removedByChange="true">
+    <Class classname="Stack1LTest">
+      <SourceLine classname="Stack1LTest" sourcefile="Stack1LTest.java" sourcepath="Stack1LTest.java"/>
+    </Class>
+    <Method classname="Stack1LTest" name="constructorRef" signature="()Lcomponents/stack/Stack;" isStatic="false">
+      <SourceLine classname="Stack1LTest" start="19" end="20" startBytecode="0" endBytecode="80" sourcefile="Stack1LTest.java" sourcepath="Stack1LTest.java"/>
+    </Method>
+    <SourceLine classname="Stack1LTest" start="19" end="19" startBytecode="1" endBytecode="1" sourcefile="Stack1LTest.java" sourcepath="Stack1LTest.java"/>
+  </BugInstance>
+  <BugInstance type="IL_INFINITE_RECURSIVE_LOOP" priority="1" rank="9" abbrev="IL" category="CORRECTNESS" first="11" last="11" removedByChange="true">
+    <Class classname="Stack1LTest">
+      <SourceLine classname="Stack1LTest" sourcefile="Stack1LTest.java" sourcepath="Stack1LTest.java"/>
+    </Class>
+    <Method classname="Stack1LTest" name="constructorTest" signature="()Lcomponents/stack/Stack;" isStatic="false">
+      <SourceLine classname="Stack1LTest" start="11" end="13" startBytecode="0" endBytecode="80" sourcefile="Stack1LTest.java" sourcepath="Stack1LTest.java"/>
+    </Method>
+    <SourceLine classname="Stack1LTest" start="11" end="11" startBytecode="1" endBytecode="1" sourcefile="Stack1LTest.java" sourcepath="Stack1LTest.java"/>
+  </BugInstance>
+  <BugInstance type="INT_BAD_COMPARISON_WITH_NONNEGATIVE_VALUE" priority="1" rank="5" abbrev="INT" category="CORRECTNESS" first="27" last="27" removedByChange="true">
+    <Class classname="StackTest">
+      <SourceLine classname="StackTest" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+    </Class>
+    <Method classname="StackTest" name="createFromArgsRef" signature="([Ljava/lang/String;)Lcomponents/stack/Stack;" isStatic="false">
+      <SourceLine classname="StackTest" start="69" end="78" startBytecode="0" endBytecode="180" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+    </Method>
+    <Int value="-1" role="INT_VALUE"/>
+    <SourceLine classname="StackTest" start="72" end="72" startBytecode="32" endBytecode="32" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+    <SourceLine classname="StackTest" start="72" end="72" startBytecode="32" endBytecode="32" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+  </BugInstance>
+  <BugInstance type="INT_BAD_COMPARISON_WITH_NONNEGATIVE_VALUE" priority="1" rank="5" abbrev="INT" category="CORRECTNESS" first="26" last="27" removedByChange="true">
+    <Class classname="StackTest">
+      <SourceLine classname="StackTest" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+    </Class>
+    <Method classname="StackTest" name="createFromArgsTest" signature="([Ljava/lang/String;)Lcomponents/stack/Stack;" isStatic="false">
+      <SourceLine classname="StackTest" start="46" end="55" startBytecode="0" endBytecode="180" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+    </Method>
+    <Int value="-1" role="INT_VALUE"/>
+    <SourceLine classname="StackTest" start="49" end="49" startBytecode="32" endBytecode="32" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+    <SourceLine classname="StackTest" start="49" end="49" startBytecode="32" endBytecode="32" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+  </BugInstance>
+  <BugInstance type="INT_BAD_COMPARISON_WITH_NONNEGATIVE_VALUE" priority="2" rank="7" abbrev="INT" category="CORRECTNESS" first="24" last="26" removedByChange="true">
+    <Class classname="StackTest">
+      <SourceLine classname="StackTest" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+    </Class>
+    <Method classname="StackTest" name="createFromArgsRef" signature="([Ljava/lang/String;)Lcomponents/stack/Stack;" isStatic="false">
+      <SourceLine classname="StackTest" start="69" end="78" startBytecode="0" endBytecode="179" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+    </Method>
+    <Int value="0" role="INT_VALUE"/>
+    <SourceLine classname="StackTest" start="72" end="72" startBytecode="31" endBytecode="31" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+    <SourceLine classname="StackTest" start="72" end="72" startBytecode="31" endBytecode="31" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+  </BugInstance>
+  <BugInstance type="INT_BAD_COMPARISON_WITH_NONNEGATIVE_VALUE" priority="2" rank="7" abbrev="INT" category="CORRECTNESS" first="24" last="25" removedByChange="true">
+    <Class classname="StackTest">
+      <SourceLine classname="StackTest" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+    </Class>
+    <Method classname="StackTest" name="createFromArgsTest" signature="([Ljava/lang/String;)Lcomponents/stack/Stack;" isStatic="false">
+      <SourceLine classname="StackTest" start="46" end="56" startBytecode="0" endBytecode="191" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+    </Method>
+    <Int value="0" role="INT_VALUE"/>
+    <SourceLine classname="StackTest" start="50" end="50" startBytecode="39" endBytecode="39" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+    <SourceLine classname="StackTest" start="50" end="50" startBytecode="39" endBytecode="39" sourcefile="StackTest.java" sourcepath="StackTest.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 15 Jan 2019 18:36:46 -0500" total_classes="2" referenced_classes="17" total_bugs="0" total_size="146" num_packages="1" java_version="1.8.0_181" vm_version="25.181-b13" cpu_seconds="18.44" clock_seconds="5.25" peak_mbytes="446.98" alloc_mbytes="1024.00" gc_seconds="0.19">
+    <PackageStats package="" total_bugs="0" total_types="2" total_size="146">
+      <ClassStats class="Stack2Test" sourceFile="Stack2Test.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="StackTest" sourceFile="StackTest.java" interface="false" size="137" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="737" invocations="2" avgMicrosecondsPerInvocation="368735" maxMicrosecondsPerInvocation="527781" standardDeviationMicrosecondsPerInvocation="159046"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="255" invocations="338" avgMicrosecondsPerInvocation="756" maxMicrosecondsPerInvocation="24815" standardDeviationMicrosecondsPerInvocation="1911"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="78" invocations="17" avgMicrosecondsPerInvocation="4589" maxMicrosecondsPerInvocation="16284" standardDeviationMicrosecondsPerInvocation="5493"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="61" invocations="21" avgMicrosecondsPerInvocation="2909" maxMicrosecondsPerInvocation="25482" standardDeviationMicrosecondsPerInvocation="5170"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="60" invocations="23" avgMicrosecondsPerInvocation="2618" maxMicrosecondsPerInvocation="53265" standardDeviationMicrosecondsPerInvocation="10802"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="59" invocations="340" avgMicrosecondsPerInvocation="176" maxMicrosecondsPerInvocation="1562" standardDeviationMicrosecondsPerInvocation="136"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="56" invocations="80" avgMicrosecondsPerInvocation="710" maxMicrosecondsPerInvocation="6312" standardDeviationMicrosecondsPerInvocation="1066"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="50" invocations="17" avgMicrosecondsPerInvocation="2956" maxMicrosecondsPerInvocation="12019" standardDeviationMicrosecondsPerInvocation="3336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="44" invocations="17" avgMicrosecondsPerInvocation="2604" maxMicrosecondsPerInvocation="37208" standardDeviationMicrosecondsPerInvocation="8680"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="41" invocations="39" avgMicrosecondsPerInvocation="1052" maxMicrosecondsPerInvocation="23944" standardDeviationMicrosecondsPerInvocation="3844"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="41" invocations="21" avgMicrosecondsPerInvocation="1954" maxMicrosecondsPerInvocation="13233" standardDeviationMicrosecondsPerInvocation="2681"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="39" invocations="25" avgMicrosecondsPerInvocation="1599" maxMicrosecondsPerInvocation="20754" standardDeviationMicrosecondsPerInvocation="3926"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="39" invocations="21" avgMicrosecondsPerInvocation="1874" maxMicrosecondsPerInvocation="15195" standardDeviationMicrosecondsPerInvocation="3039"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1547567545322" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1547567545325" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1547567545361" release="" codeSize="101" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1547567545964" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1547567546042" release="" codeSize="101" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1547570139316" release="" codeSize="109" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1547570144006" release="" codeSize="109" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1547570156879" release="" codeSize="109" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1547570220887" release="" codeSize="109" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1547577933367" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1547577934526" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1547578559330" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1547578755078" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1547578909905" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1547578923647" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1547578960155" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1547579219027" release="" codeSize="116" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1547579325727" release="" codeSize="124" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1547579498321" release="" codeSize="126" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1547579503795" release="" codeSize="133" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1547579598161" release="" codeSize="133" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1547580143841" release="" codeSize="134" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1547580153470" release="" codeSize="130" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1547580164411" release="" codeSize="137" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1547580197861" release="" codeSize="137" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1547580214928" release="" codeSize="138" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1547580275789" release="" codeSize="137" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1547580285552" release="" codeSize="137" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1547580314924" release="" codeSize="137" numClasses="1"/>
+  </History>
+</BugCollection>

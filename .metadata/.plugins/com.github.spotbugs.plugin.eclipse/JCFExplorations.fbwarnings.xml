@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.10" sequence="86" timestamp="1555022540257" analysisTimestamp="1555022539670" release="">
+  <Project projectName="JCFExplorations">
+    <Jar>D:\workspace\JCFExplorations\bin\JCFExplorations.class</Jar>
+    <AuxClasspathEntry>D:\workspace\JCFExplorations\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\jhkwa\OneDrive\SP19\CSE2231\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_181\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_181\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>D:\workspace\JCFExplorations\src</SrcDir>
+    <SrcDir>D:\workspace\JCFExplorations\test</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="72" last="72" removedByChange="true">
+    <Class classname="JCFExplorations">
+      <SourceLine classname="JCFExplorations" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    </Class>
+    <Method classname="JCFExplorations" name="incrementAll" signature="(Ljava/util/Set;)V" isStatic="true">
+      <SourceLine classname="JCFExplorations" start="152" end="164" startBytecode="0" endBytecode="34" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    </Method>
+    <LocalVariable name="sTmp" register="2" pc="35" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="JCFExplorations" start="155" end="155" startBytecode="34" endBytecode="34" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    <SourceLine classname="JCFExplorations" start="155" end="155" startBytecode="34" endBytecode="34" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="sTmp"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="83" last="83" removedByChange="true">
+    <Class classname="JCFExplorations">
+      <SourceLine classname="JCFExplorations" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    </Class>
+    <Method classname="JCFExplorations" name="incrementAll" signature="(Ljava/util/Set;)V" isStatic="true">
+      <SourceLine classname="JCFExplorations" start="150" end="154" startBytecode="0" endBytecode="13" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    </Method>
+    <LocalVariable name="tmp" register="1" pc="30" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="JCFExplorations" start="152" end="152" startBytecode="29" endBytecode="29" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    <SourceLine classname="JCFExplorations" start="152" end="152" startBytecode="29" endBytecode="29" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="tmp"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="22" last="23" removedByChange="true">
+    <Class classname="JCFExplorations">
+      <SourceLine classname="JCFExplorations" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    </Class>
+    <Method classname="JCFExplorations" name="incrementAll" signature="(Lcomponents/set/Set;)V" isStatic="true">
+      <SourceLine classname="JCFExplorations" start="120" end="129" startBytecode="0" endBytecode="23" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    </Method>
+    <LocalVariable name="setTmp" register="2" pc="37" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="JCFExplorations" start="123" end="123" startBytecode="36" endBytecode="36" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    <SourceLine classname="JCFExplorations" start="123" end="123" startBytecode="36" endBytecode="36" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="setTmp"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="25" last="25" removedByChange="true">
+    <Class classname="JCFExplorations">
+      <SourceLine classname="JCFExplorations" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    </Class>
+    <Method classname="JCFExplorations" name="incrementAll" signature="(Ljava/util/Set;)V" isStatic="true">
+      <SourceLine classname="JCFExplorations" start="153" end="157" startBytecode="0" endBytecode="12" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    </Method>
+    <LocalVariable name="it" register="1" pc="27" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="JCFExplorations" start="155" end="155" startBytecode="26" endBytecode="26" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    <SourceLine classname="JCFExplorations" start="155" end="155" startBytecode="26" endBytecode="26" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="it"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="ICAST_IDIV_CAST_TO_DOUBLE" priority="2" rank="17" abbrev="ICAST" category="STYLE" first="1" last="2" removedByChange="true">
+    <Class classname="JCFExplorations">
+      <SourceLine classname="JCFExplorations" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    </Class>
+    <Method classname="JCFExplorations" name="giveRaise" signature="(Lcomponents/map/Map;CI)V" isStatic="true">
+      <SourceLine classname="JCFExplorations" start="40" end="56" startBytecode="0" endBytecode="270" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    </Method>
+    <SourceLine classname="JCFExplorations" start="48" end="48" startBytecode="65" endBytecode="65" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    <SourceLine classname="JCFExplorations" start="48" end="48" startBytecode="65" endBytecode="65" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="57" last="71" removedByChange="true">
+    <Class classname="JCFExplorations">
+      <SourceLine classname="JCFExplorations" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    </Class>
+    <Method classname="JCFExplorations" name="incrementAll" signature="(Ljava/util/Set;)V" isStatic="true">
+      <SourceLine classname="JCFExplorations" start="152" end="164" startBytecode="0" endBytecode="234" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+    </Method>
+    <String value="sTmp"/>
+    <Type descriptor="Ljava/util/HashSet;">
+      <SourceLine classname="java.util.HashSet"/>
+    </Type>
+    <SourceLine classname="JCFExplorations" start="155" end="155" startBytecode="31" endBytecode="31" sourcefile="JCFExplorations.java" sourcepath="JCFExplorations.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 11 Apr 2019 18:42:19 -0400" total_classes="1" referenced_classes="19" total_bugs="0" total_size="50" num_packages="1" java_version="1.8.0_181" vm_version="25.181-b13" cpu_seconds="2.19" clock_seconds="0.59" peak_mbytes="845.40" alloc_mbytes="1024.00" gc_seconds="0.11">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="50">
+      <ClassStats class="JCFExplorations" sourceFile="JCFExplorations.java" interface="false" size="50" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="180" invocations="329" avgMicrosecondsPerInvocation="547" maxMicrosecondsPerInvocation="47843" standardDeviationMicrosecondsPerInvocation="3064"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="156" invocations="330" avgMicrosecondsPerInvocation="473" maxMicrosecondsPerInvocation="91936" standardDeviationMicrosecondsPerInvocation="5108"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="83" invocations="2" avgMicrosecondsPerInvocation="41509" maxMicrosecondsPerInvocation="72189" standardDeviationMicrosecondsPerInvocation="30680"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="21" invocations="70" avgMicrosecondsPerInvocation="301" maxMicrosecondsPerInvocation="10043" standardDeviationMicrosecondsPerInvocation="1180"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1554757647328" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1554757647331" release="" codeSize="26" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1554757647837" release="" codeSize="26" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1554757961594" release="" codeSize="19" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1554757972432" release="" codeSize="26" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1554757984277" release="" codeSize="27" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1554758013184" release="" codeSize="26" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1554758085963" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1554758113365" release="" codeSize="29" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1554758289291" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1554758312587" release="" codeSize="27" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1554758354545" release="" codeSize="27" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1554758367358" release="" codeSize="27" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1554758376805" release="" codeSize="27" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1554758405672" release="" codeSize="27" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1554758479935" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1554771585235" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1554771585812" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1554771589989" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1554771608873" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1554771693909" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1554771711322" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1554771808885" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1554771828389" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1554771857955" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1554771918648" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1554771942088" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1554772005384" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1554772028030" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1554772084167" release="" codeSize="103" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1554772175041" release="" codeSize="105" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1554772297101" release="" codeSize="105" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1554772309724" release="" codeSize="105" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1554772376015" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1554772384808" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1554772401818" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1554772497602" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="37" timestamp="1554772509754" release="" codeSize="106" numClasses="1"/>
+    <AppVersion sequence="38" timestamp="1554772544560" release="" codeSize="106" numClasses="1"/>
+    <AppVersion sequence="39" timestamp="1554772551148" release="" codeSize="95" numClasses="1"/>
+    <AppVersion sequence="40" timestamp="1554772553967" release="" codeSize="106" numClasses="1"/>
+    <AppVersion sequence="41" timestamp="1554772623788" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="42" timestamp="1554772636853" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="43" timestamp="1554772657635" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="44" timestamp="1554772721285" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="45" timestamp="1554772725408" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="46" timestamp="1554772734934" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="47" timestamp="1554772821112" release="" codeSize="104" numClasses="1"/>
+    <AppVersion sequence="48" timestamp="1554772911459" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="49" timestamp="1554772921288" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="50" timestamp="1554772923401" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="51" timestamp="1554994133514" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="52" timestamp="1555005407677" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="53" timestamp="1555007322173" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="54" timestamp="1555007510612" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="55" timestamp="1555007514204" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="56" timestamp="1555007595916" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="57" timestamp="1555007952428" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="58" timestamp="1555008034950" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="59" timestamp="1555008079310" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="60" timestamp="1555008115699" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="61" timestamp="1555008125712" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="62" timestamp="1555008129324" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="63" timestamp="1555008146647" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="64" timestamp="1555008200096" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="65" timestamp="1555008281239" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="66" timestamp="1555008291842" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="67" timestamp="1555008302751" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="68" timestamp="1555008317002" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="69" timestamp="1555008319846" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="70" timestamp="1555008321956" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="71" timestamp="1555008328230" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="72" timestamp="1555008346141" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="73" timestamp="1555008441240" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="74" timestamp="1555008470778" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="75" timestamp="1555008481597" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="76" timestamp="1555008571738" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="77" timestamp="1555014262912" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="78" timestamp="1555014274983" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="79" timestamp="1555014329206" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="80" timestamp="1555014342304" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="81" timestamp="1555014362775" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="82" timestamp="1555014423964" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="83" timestamp="1555014449894" release="" codeSize="45" numClasses="1"/>
+    <AppVersion sequence="84" timestamp="1555014488760" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="85" timestamp="1555014508700" release="" codeSize="50" numClasses="1"/>
+  </History>
+</BugCollection>

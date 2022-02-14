@@ -1,0 +1,14 @@
+WHILE true DO
+  WHILE next-is-enemy DO
+    infect
+  END WHILE
+  IF random THEN
+    turnleft
+    infect
+    IF next-is-wall THEN
+      turnleft
+    ELSE
+      move
+    END IF
+  END IF
+END WHILE

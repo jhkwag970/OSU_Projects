@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.10" sequence="3" timestamp="1547439094314" analysisTimestamp="1547439093894" release="">
+  <Project projectName="Practice">
+    <Jar>D:\workspace\Practice\bin\components</Jar>
+    <AuxClasspathEntry>D:\workspace\Practice\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\jhkwa\OneDrive\SP19\CSE2231\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_181\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_181\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>D:\workspace\Practice\src</SrcDir>
+    <SrcDir>D:\workspace\Practice\test</SrcDir>
+  </Project>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="2" last="2" removedByChange="true">
+    <Class classname="Queue3">
+      <SourceLine classname="Queue3" sourcefile="Queue3.java" sourcepath="Queue3.java"/>
+    </Class>
+    <Field classname="Queue3" name="entries" signature="Lcomponents/sequence/Sequence;" isStatic="false">
+      <SourceLine classname="Queue3" start="24" end="24" startBytecode="0" endBytecode="0" sourcefile="Queue3.java" sourcepath="Queue3.java"/>
+    </Field>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 13 Jan 2019 23:11:33 -0500" total_classes="1" referenced_classes="25" total_bugs="0" total_size="23" num_packages="1" java_version="1.8.0_181" vm_version="25.181-b13" cpu_seconds="1.41" clock_seconds="0.42" peak_mbytes="747.97" alloc_mbytes="1024.00" gc_seconds="0.04">
+    <PackageStats package="components.queue" total_bugs="0" total_types="1" total_size="23">
+      <ClassStats class="components.queue.Queue3" sourceFile="Queue3.java" interface="false" size="23" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="127" invocations="363" avgMicrosecondsPerInvocation="350" maxMicrosecondsPerInvocation="44439" standardDeviationMicrosecondsPerInvocation="2360"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="68" invocations="2" avgMicrosecondsPerInvocation="34267" maxMicrosecondsPerInvocation="59228" standardDeviationMicrosecondsPerInvocation="24961"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="52" invocations="366" avgMicrosecondsPerInvocation="144" maxMicrosecondsPerInvocation="3008" standardDeviationMicrosecondsPerInvocation="185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="21" invocations="25" avgMicrosecondsPerInvocation="853" maxMicrosecondsPerInvocation="8869" standardDeviationMicrosecondsPerInvocation="1795"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="20" invocations="25" avgMicrosecondsPerInvocation="831" maxMicrosecondsPerInvocation="16166" standardDeviationMicrosecondsPerInvocation="3139"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="15" invocations="331" avgMicrosecondsPerInvocation="46" maxMicrosecondsPerInvocation="473" standardDeviationMicrosecondsPerInvocation="62"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="12" invocations="75" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="716" standardDeviationMicrosecondsPerInvocation="165"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1547439070054" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1547439070054" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1547439074893" release="" codeSize="12" numClasses="1"/>
+  </History>
+</BugCollection>

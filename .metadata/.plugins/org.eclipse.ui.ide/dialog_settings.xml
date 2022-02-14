@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\workspace\EmailAccounts"/>
+			<item value="D:\workspace\JavaIOExplorations"/>
+			<item value="D:\workspace\JCFExplorations"/>
+			<item value="D:\workspace\WaitingLineFamilyDesign"/>
+			<item value="D:\workspace\BLParser"/>
+			<item value="D:\workspace\ExpressionEvaluator"/>
+			<item value="D:\workspace\Tokenizer"/>
+			<item value="D:\workspace\ProgramAndStatement"/>
+			<item value="D:\workspace\StatementPrettyPrint"/>
+			<item value="D:\workspace\ProgramPrettyPrint"/>
+			<item value="D:\workspace\ListWithRetreat"/>
+			<item value="D:\workspace\ListWithTwoSmartNodes"/>
+			<item value="D:\workspace\StackWithLinkedList"/>
+			<item value="D:\workspace\ArraySiftDown"/>
+			<item value="D:\workspace\QueueQuicksort"/>
+			<item value="D:\workspace\SetOnBST"/>
+			<item value="D:\workspace\BinarySearchTreeMethods"/>
+			<item value="D:\workspace\MapWithHashing"/>
+			<item value="D:\workspace\NaturalNumberOnString"/>
+			<item value="D:\workspace\SequenceOnStack"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="545" key="DIALOG_X_ORIGIN"/>
+		<item value="209" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

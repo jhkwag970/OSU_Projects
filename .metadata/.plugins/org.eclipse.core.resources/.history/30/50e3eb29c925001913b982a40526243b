@@ -1,0 +1,25 @@
+
+public class HW11 {
+    
+    /**
+     * The phone number representation.
+     */
+    private String rep;
+ 
+    /**
+     * Constructor. {@code pNum} must be in the form "XXX-XXXX" where each
+     * "X" is a digit '0'-'9'.
+     */
+    public PhoneNumber(String pNum) {
+        this.rep = pNum;
+    }
+    
+    
+
+    public static void main(String[] args) {
+        int a = Character.digit('1', 36);
+
+        System.out.println(a);
+    }
+
+}

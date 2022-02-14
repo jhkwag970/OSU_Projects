@@ -1,0 +1,10 @@
+PROGRAM doingSomething IS
+
+BEGIN
+  infect
+  WHILE true DO
+    IF next-is-empty THEN
+      move
+    END IF
+  END WHILE
+END doingSomething

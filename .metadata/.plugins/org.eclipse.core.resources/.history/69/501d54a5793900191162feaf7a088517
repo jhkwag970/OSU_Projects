@@ -1,0 +1,121 @@
+import java.util.Comparator;
+import java.util.Iterator;
+
+import components.list.List;
+import components.list.List1L;
+import components.naturalnumber.NaturalNumber;
+import components.naturalnumber.NaturalNumber2;
+import components.queue.Queue;
+import components.sequence.Sequence;
+
+public class exampleMain {
+
+    public static NaturalNumber max(Sequence<NaturalNumber> s) {
+        NaturalNumber max = s.remove(0);
+        s.add(0, max);
+        int length = s.length();
+        for (int i = 0; i < length; i++) {
+            NaturalNumber tmp = s.remove(i);
+            if (max.compareTo(tmp) < 0) {
+                max = tmp;
+            }
+            s.add(i, tmp);
+        }
+
+        return max;
+    }
+
+    public static NaturalNumber min(Sequence<NaturalNumber> s) {
+        NaturalNumber max = s.remove(0);
+        s.add(0, max);
+        int length = s.length();
+        for (int i = 0; i < length; i++) {
+            NaturalNumber tmp = s.remove(i);
+            if (max.compareTo(tmp) > 0) {
+                max.copyFrom(tmp);
+            }
+            s.add(i, tmp);
+        }
+
+        return max;
+    }
+
+    public static NaturalNumber min2(Sequence<NaturalNumber> s) {
+        Iterator<NaturalNumber> t = s.iterator();
+        NaturalNumber min = s.entry(0);
+
+        while (t.hasNext()) {
+            NaturalNumber tmp = t.next();
+            if (min.compareTo(tmp) > 0) {
+                min = tmp;
+            }
+        }
+        return new NaturalNumber2(2);
+
+    }
+
+    /**
+     * Partitions {@code q} into two parts: entries no larger than
+     * {@code partitioner} are put in {@code front}, and the rest are put in
+     * {@code back}.
+     *
+     * @param <T>
+     *            type of {@code Queue} entries
+     * @param q
+     *            the {@code Queue} to be partitioned
+     * @param partitioner
+     *            the partitioning value
+     * @param front
+     *            upon return, the entries no larger than {@code partitioner}
+     * @param back
+     *            upon return, the entries larger than {@code partitioner}
+     * @param order
+     *            ordering by which to separate entries
+     * @clears q
+     * @replaces front, back
+     * @requires IS_TOTAL_PREORDER([relation computed by order.compare method])
+     * @ensures <pre>
+     * perms(#q, front * back)  and
+     * for all x: T where (<x> is substring of front)
+     *  ([relation computed by order.compare method](x, partitioner))  and
+     * for all x: T where (<x> is substring of back)
+     *  (not [relation computed by order.compare method](x, partitioner))
+     * </pre>
+     */
+    private static <T> void partition(Queue<T> q, T partitioner, Queue<T> front,
+            Queue<T> back, Comparator<T> order) {
+
+        if (q.length() > 0) {
+            T value = q.dequeue();
+            if (order.compare(value, partitioner) > 0) {
+                front.enqueue(value);
+            } else if (order.compare(value, partitioner) < 0) {
+                back.enqueue(value);
+            }
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        List<Integer> list = new List1L<Integer>();
+
+        list.addRightFront(1);
+
+        list.addRightFront(0);
+
+        list.addRightFront(2);
+
+        list.advance();
+
+        list.addRightFront(-1);
+
+        list.advance();
+
+        list.moveToFinish();
+        
+        list.retreat();
+
+    }
+
+}

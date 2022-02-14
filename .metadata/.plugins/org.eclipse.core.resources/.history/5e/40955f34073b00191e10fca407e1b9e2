@@ -1,0 +1,23 @@
+
+public class HW_20 {
+
+    /**
+     * Returns the size of the given {@code Tree<T>}.
+     *
+     * @param <T>
+     *            the type of the {@code Tree} node labels
+     * @param t
+     *            the {@code Tree} whose size to return
+     * @return the size of the given {@code Tree}
+     * @ensures size = |t|
+     */
+    public static <T> int size(Tree<T> t) {
+
+    }
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+    }
+
+}

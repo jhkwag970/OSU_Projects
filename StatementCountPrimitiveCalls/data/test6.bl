@@ -1,0 +1,9 @@
+WHILE true DO
+    turnright
+    IF next-is-enemy THEN
+        TurnAround
+    ELSE
+        skip
+    END IF
+    turnleft
+END WHILE

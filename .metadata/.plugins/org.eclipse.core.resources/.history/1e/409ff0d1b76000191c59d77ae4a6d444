@@ -1,0 +1,209 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class tagCloud_standardJava {
+
+    private tagCloud_standardJava() {
+
+    }
+
+    private static class compareInt
+            implements Comparator<Map.Entry<Integer, String>> {
+
+        @Override
+        public int compare(Entry<Integer, String> p1,
+                Entry<Integer, String> p2) {
+            return (p1.getKey().compareTo(p2.getKey())) * -1;
+        }
+    }
+
+    private static class compareString
+            implements Comparator<Map.Entry<String, Integer>> {
+        @Override
+        public int compare(Map.Entry<String, Integer> p1,
+                Map.Entry<String, Integer> p2) {
+            return p1.getKey().toLowerCase()
+                    .compareTo(p2.getKey().toLowerCase());
+        }
+    }
+
+    public static void main(String[] args) {
+
+        String input = "", output = "";
+        int n = 0;
+        Set<String> wordList = new HashSet<String>();
+        Map<String, Integer> wordCount = new HashMap<String, Integer>();
+
+        Comparator<Map.Entry<Integer, String>> sortInt = new comparInt();
+        SortedMap<Integer, String> sortByInt = new TreeMap<Integer, String>();
+
+        SortedMap<String, Integer> sortByString = new TreeMap<String, Integer>();
+
+        BufferedReader in = new BufferedReader(
+                new InputStreamReader(System.in));
+
+        try {
+            System.out.println("Enter the value: ");
+            input = in.readLine();
+
+            System.out.println("Enter the value: ");
+            output = in.readLine();
+
+            System.out.println("Enter the value: ");
+            n = in.read();
+            while (n < 0) {
+                System.out.println("Number bust be an positive integer");
+                n = in.read();
+            }
+        } catch (IOException e) {
+            System.err.println("Error reading the file");
+            return;
+        }
+
+        BufferedReader inFile;
+        PrintWriter out;
+        try {
+            inFile = new BufferedReader(new FileReader(input));
+            out = new PrintWriter(new BufferedWriter(new FileWriter(output)));
+        } catch (IOException e) {
+            System.err.println("Error opening the file");
+            return;
+        }
+
+        countingWords(inFile, wordList, wordCount);
+
+        try {
+            inFile.close();
+            in.close();
+            out.close();
+        } catch (IOException e) {
+            System.err.println("Error closing the file");
+        }
+
+    }
+
+    /**
+     *
+     * processFeed is for inserting the separated word and its number of uses
+     * into map and sequence.
+     *
+     * @param fileIn
+     *            SimpleReader file
+     * @param word
+     *            the map that insert the word and its number of uses
+     * @param wordIndex
+     *            the sequence that insert the only word
+     * @requires fileIn should not be empty
+     * @update word and wordIndex
+     * @ensures word and wordIndex should not be empty and key of the word must
+     *          be same as wordIndex.
+     */
+    public static void countingWords(BufferedReader fileIn,
+            Set<String> wordIndex, Map<String, Integer> word) {
+
+        Set<Character> separatorSet = new HashSet<Character>();
+        String separator = "\\ \t\n\r,-.!?[]';:/()@&~`\"";
+
+        for (int i = 0; i < separator.length(); i++) {
+            separatorSet.add(separator.charAt(i));
+        }
+
+        try {
+            String line = fileIn.readLine();
+            while (line != null) {
+                int pos = 0;
+                while (pos < line.length()) {
+                    String token = nextWordOrSeparator(line, pos, separatorSet);
+                    if (!separatorSet.contains(token.charAt(0))) {
+                        if (word.containsKey(token)) {
+                            int num = word.get(token);
+                            num++;
+                            word.put(token, num);
+                        } else {
+                            word.put(token, 1);
+                            wordIndex.add(token);
+                        }
+                    }
+                    pos += token.length();
+                }
+                line = fileIn.readLine();
+            }
+        } catch (IOException e) {
+            System.err.println("Error reading file");
+            return;
+        }
+
+    }
+
+    /**
+     * Returns the first "word" (maximal length string of characters not in
+     * {@code separators}) or "separator string" (maximal length string of
+     * characters in {@code separators}) in the given {@code text} starting at
+     * the given {@code position}.
+     *
+     * @param text
+     *            the {@code String} from which to get the word or separator
+     *            string
+     * @param position
+     *            the starting index
+     * @param separators
+     *            the {@code Set} of separator characters
+     * @return the first word or separator string found in {@code text} starting
+     *         at index {@code position}
+     * @requires 0 <= position < |text|
+     * @ensures <pre>
+     * nextWordOrSeparator =
+     *   text[position, position + |nextWordOrSeparator|)  and
+     * if entries(text[position, position + 1)) intersection separators = {}
+     * then
+     *   entries(nextWordOrSeparator) intersection separators = {}  and
+     *   (position + |nextWordOrSeparator| = |text|  or
+     *    entries(text[position, position + |nextWordOrSeparator| + 1))
+     *      intersection separators /= {})
+     * else
+     *   entries(nextWordOrSeparator) is subset of separators  and
+     *   (position + |nextWordOrSeparator| = |text|  or
+     *    entries(text[position, position + |nextWordOrSeparator| + 1))
+     *      is not subset of separators)
+     * </pre>
+     */
+    private static String nextWordOrSeparator(String text, int pos,
+            Set<Character> separators) {
+        int cnt = pos;
+        String result = "";
+
+        if (separators.contains(text.charAt(pos))) {
+            while (cnt < text.length()
+                    && separators.contains(text.charAt(cnt))) {
+                cnt++;
+            }
+        } else {
+            while (cnt < text.length()
+                    && !separators.contains(text.charAt(cnt))) {
+                cnt++;
+            }
+        }
+        result = text.substring(pos, cnt);
+        return result;
+    }
+
+    private static String wordSort(Map<String, Integer> wordCount,
+            SortedMap<String, Integer> sortByStr,
+            SortedMap<Integer, String> sortByInt) {
+
+        return "";
+    }
+}

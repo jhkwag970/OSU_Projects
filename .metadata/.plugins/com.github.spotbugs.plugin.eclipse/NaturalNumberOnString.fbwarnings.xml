@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.10" sequence="13" timestamp="1550071330895" analysisTimestamp="1550071224686" release="">
+  <Project projectName="NaturalNumberOnString">
+    <Jar>D:\workspace\NaturalNumberOnString\bin\NaturalNumber3.class</Jar>
+    <Jar>D:\workspace\NaturalNumberOnString\bin\NaturalNumberTest.class</Jar>
+    <AuxClasspathEntry>D:\workspace\NaturalNumberOnString\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\jhkwa\OneDrive\SP19\CSE2231\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_181\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_181\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>D:\workspace\NaturalNumberOnString\src</SrcDir>
+    <SrcDir>D:\workspace\NaturalNumberOnString\test</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 13 Feb 2019 10:20:24 -0500" total_classes="2" referenced_classes="24" total_bugs="0" total_size="190" num_packages="1" java_version="1.8.0_181" vm_version="25.181-b13" cpu_seconds="46.25" clock_seconds="106.33" peak_mbytes="481.06" alloc_mbytes="1024.00" gc_seconds="0.59">
+    <PackageStats package="" total_bugs="0" total_types="2" total_size="190">
+      <ClassStats class="NaturalNumber3" sourceFile="NaturalNumber3.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="NaturalNumberTest" sourceFile="NaturalNumberTest.java" interface="false" size="117" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="2226" invocations="2" avgMicrosecondsPerInvocation="1113434" maxMicrosecondsPerInvocation="1638913" standardDeviationMicrosecondsPerInvocation="525479"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="920" invocations="341" avgMicrosecondsPerInvocation="2699" maxMicrosecondsPerInvocation="254823" standardDeviationMicrosecondsPerInvocation="15961"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="427" invocations="29" avgMicrosecondsPerInvocation="14734" maxMicrosecondsPerInvocation="238000" standardDeviationMicrosecondsPerInvocation="44439"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="380" invocations="2" avgMicrosecondsPerInvocation="190047" maxMicrosecondsPerInvocation="379066" standardDeviationMicrosecondsPerInvocation="189019"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="320" invocations="24" avgMicrosecondsPerInvocation="13362" maxMicrosecondsPerInvocation="123429" standardDeviationMicrosecondsPerInvocation="32380"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="291" invocations="343" avgMicrosecondsPerInvocation="851" maxMicrosecondsPerInvocation="46066" standardDeviationMicrosecondsPerInvocation="4284"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="275" invocations="30" avgMicrosecondsPerInvocation="9198" maxMicrosecondsPerInvocation="132335" standardDeviationMicrosecondsPerInvocation="31019"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="185" invocations="31" avgMicrosecondsPerInvocation="5970" maxMicrosecondsPerInvocation="90329" standardDeviationMicrosecondsPerInvocation="17674"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="156" invocations="2" avgMicrosecondsPerInvocation="78294" maxMicrosecondsPerInvocation="138396" standardDeviationMicrosecondsPerInvocation="60102"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="150" invocations="24" avgMicrosecondsPerInvocation="6269" maxMicrosecondsPerInvocation="130169" standardDeviationMicrosecondsPerInvocation="25924"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1548701165203" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1548701165203" release="" codeSize="73" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1548701201353" release="" codeSize="90" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1548701247497" release="" codeSize="90" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1548701314156" release="" codeSize="73" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1549854985148" release="" codeSize="73" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1550017980406" release="" codeSize="90" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1550017980489" release="" codeSize="73" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1550017981345" release="" codeSize="73" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1550020029557" release="" codeSize="101" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1550022127952" release="" codeSize="101" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1550022138859" release="" codeSize="109" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1550022161801" release="" codeSize="117" numClasses="1"/>
+  </History>
+</BugCollection>

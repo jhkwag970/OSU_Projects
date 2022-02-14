@@ -1,0 +1,7 @@
+IF next-is-friend THEN
+    turnright
+    turnright
+    WHILE true DO
+        infect
+    END WHILE
+END IF
